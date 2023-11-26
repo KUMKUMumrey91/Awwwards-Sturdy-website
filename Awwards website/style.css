@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+
+}
+
+@font-face {
+    font-family: "new";
+    src: url(./FKGroteskNeue-Regular.9bdeef8.ttf);
+}
+
+#main {
+    /* overflow-x: hidden; */
+    z-index: 9;
+    cursor: pointer;
+
+}  
+
+#page1 {
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#nav {
+    height: 25px;
+    width: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav button {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.588);
+    font-size: 6px;
+    padding: 5px 5px;
+    margin: 2px;
+
+}
+
+#overlay h1 {
+    font-size: 140px;
+    font-weight: 900;
+    letter-spacing: -14px;
+    font-family: sans-serif;
+    color: aliceblue;
+    position: absolute;
+    top: -15px;
+}
+
+#overlay h2 {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "new";
+    color: aliceblue;
+    text-align: center;
+    line-height: 13px;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    width: 55%;
+
+}
+
+#elem1 {
+    width: 50%;
+    /* background-color: #5f5b5b; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 86%;
+    left: 32%;
+}
+
+#elem1 h6 {
+    font-size: 5px;
+    color: #fff;
+    font-family: "new";
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    background-color: #00000050;
+    margin-top: 1px;
+    padding: 3px 8px;
+    margin: 1px;
+    cursor: pointer;
+    border: 0.5px solid rgb(71, 71, 71);
+}
+
+#elem2 {
+    width: 50%;
+    /* background-color: #5f5b5b; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 92%;
+    left: 28%;
+}
+
+#elem2 h6 {
+    font-size: 5px;
+    color: #fff;
+    border: none;
+    font-family: "new";
+    font-weight: 300;
+    border-radius: 10px;
+    background-color: #00000050;
+    margin: 1px;
+    padding: 3px 8px;
+    border: 0.1px solid rgb(71, 71, 71);
+}
+
+#page2 {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    background-color: #eaeef4;
+}
+
+#page2 h2 {
+    font-size: 16px;
+    width: 45%;
+    font-family: "new";
+    font-weight: 500;
+    line-height: 17px;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+}
+
+#page2 h6 {
+    font-size: 6px;
+    font-weight: 400;
+    font-family: "new";
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+}
+
+#page3 {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    z-index: 9;
+    cursor: none;
+}
+
+#part {
+    height: 100%;
+    width: 50%;
+    background-color: #eaeef4;
+    border-right: 0.1px solid grey;
+}
+
+#part img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#part video {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#cnt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cnt h4 {
+    font-size: 5px;
+    font-family: "new";
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.551);
+}
+
+#cnt h5 {
+    font-size: 15px;
+    font-family: "new";
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+#page4 {
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    cursor: none;
+
+}
+
+#pt {
+    height: 100%;
+    width: 25%;
+    background-color: #eaeef4;
+    border-right: 0.1px solid grey;
+}
+
+#pt img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#pt video {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page5 {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    background-color: #eaeef4;
+    cursor: none;
+}
+
+#prt {
+    height: 100%;
+    width: 50%;
+    background-color: #eaeef4;
+    border-right: 0.1px solid rgb(128, 128, 128);
+}
+
+#prt img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page6 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #eaeef4;
+    position: relative;
+
+}
+
+#page6 h6 {
+    font-size: 6px;
+    font-weight: 400;
+    font-family: "new";
+    position: absolute;
+    left: 50%;
+    
+}
+#slide1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide{
+    height: 120vh;
+    width: 100%;
+    /* background-color: #000000; */
+}
+section{
+    height: 180vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section h1 {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 55px;
+    font-weight: 500;
+    font-family: "new";
+    line-height: 80px;
+    color: rgba(128, 128, 128, 0.417);
+    cursor: pointer;
+    transition: all ease 0.5s;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--i)*32.5deg)) translateZ(130px);
+    backface-visibility: hidden;
+}
+
+section h1:hover {
+    color: black;
+}
+
+#page7 {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    background-color: #eaeef4;
+}
+
+#page7 h3 {
+    font-size: 16px;
+    width: 45%;
+    font-family: "new";
+    font-weight: 500;
+    line-height: 17px;
+    position: absolute;
+    top: 30%;
+    left: 52%;
+}
+
+#page7 h6 {
+    font-size: 6px;
+    font-weight: 400;
+    font-family: "new";
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+
+#page8 {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    background-color: #eaeef4;
+}
+
+#left {
+    height: 100%;
+    width: 50%;
+    /* background-color: #ef6e6e; */
+}
+
+#right {
+    height: 100%;
+    width: 50%;
+    /* background-color: #6eedef; */
+    display: flex;
+}
+
+#first {
+    height: 100%;
+    width: 55%;
+
+}
+
+#first p {
+    font-size: 6px;
+    width: 40%;
+}
+
+#second {
+    height: 100%;
+    width: 50%;
+
+}
+
+#second p {
+    font-size: 6px;
+    width: 90%;
+
+}
+
+#page9 {
+    height: 30vh;
+    width: 100vw;
+    background-color: #eaeef4;
+    position: relative;
+
+}
+
+#page9 h1 {
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: -10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -60px;
+}
+
+#circle {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    /* mix-blend-mode: difference; */
+    transition: all ease-in 0.1s;
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    font-size: 6px;
+    padding: 7px 7px;
+
+}
